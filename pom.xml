@@ -6,7 +6,7 @@
 
     <groupId>com.virginpulse</groupId>
     <artifactId>amazon-sns-java-extended-client-lib</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.2VP</version>
     <name>Amazon SNS Extended Client Library for Java</name>
     <description>An extension to the Amazon SNS client that enables sending and receiving messages up to 2GB via Amazon S3.
     </description>

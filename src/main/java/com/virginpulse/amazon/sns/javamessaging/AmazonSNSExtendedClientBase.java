@@ -5,7 +5,6 @@ import com.amazonaws.ResponseMetadata;
 import com.amazonaws.regions.Region;
 import com.amazonaws.services.sns.AmazonSNS;
 import com.amazonaws.services.sns.model.*;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.List;
 
@@ -18,14 +17,12 @@ abstract class AmazonSNSExtendedClientBase implements AmazonSNS {
 
     /** @deprecated */
     @Deprecated
-    public void setEndpoint(String var1) {
-        throw new NotImplementedException();
-    }
+    public void setEndpoint(String var1) { throw new RuntimeException("Not Implement"); }
 
     /** @deprecated */
     @Deprecated
     public void setRegion(Region var1) {
-        throw new NotImplementedException();
+        throw new RuntimeException("Not Implement");
     }
 
     public AddPermissionResult addPermission(AddPermissionRequest addPermissionRequest) {
@@ -172,12 +169,10 @@ abstract class AmazonSNSExtendedClientBase implements AmazonSNS {
         return amazonSnsToBeExtended.publish(publishRequest);
     }
 
-    public PublishResult publish(String s1, String s2) {
-        throw new NotImplementedException();
-    }
+    public PublishResult publish(String s1, String s2) { throw new RuntimeException("Not Implement"); }
 
     public PublishResult publish(String s1, String s2, String s3) {
-        throw new NotImplementedException();
+        throw new RuntimeException("Not Implement");
     }
 
     public RemovePermissionResult removePermission(RemovePermissionRequest removePermissionRequest) {
