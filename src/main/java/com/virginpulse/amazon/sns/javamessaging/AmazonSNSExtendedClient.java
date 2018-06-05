@@ -54,7 +54,7 @@ public class AmazonSNSExtendedClient extends AmazonSNSExtendedClientBase impleme
             publishRequest = storeMessageInS3(publishRequest);
         }
 
-        return this.publish(publishRequest);
+        return super.publish(publishRequest);
     }
 
     private boolean isLarge(PublishRequest publishRequest) {
