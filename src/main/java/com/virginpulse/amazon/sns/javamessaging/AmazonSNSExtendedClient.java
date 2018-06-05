@@ -187,7 +187,7 @@ public class AmazonSNSExtendedClient extends AmazonSNSExtendedClientBase impleme
         String s3PointerStr = null;
         try {
             JsonDataConverter jsonDataConverter = new JsonDataConverter();
-            s3PointerStr = jsonDataConverter.serializeToJson(s3Pointer);
+            s3PointerStr = jsonDataConverter.serializeToJson(s3Pointer).replace("com.virginpulse.amazon.sns.javamessaging", "com.amazon.sqs.javamessaging");
         } catch (Exception e) {
             String errorMessage = "Failed to convert S3 object pointer to text. Message was not sent.";
             LOG.error(errorMessage, e);
