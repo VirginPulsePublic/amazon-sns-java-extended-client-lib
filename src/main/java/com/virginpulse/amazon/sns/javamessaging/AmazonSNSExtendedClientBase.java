@@ -149,6 +149,10 @@ abstract class AmazonSNSExtendedClientBase implements AmazonSNS {
         return amazonSnsToBeExtended.listSubscriptionsByTopic(s1, s2);
     }
 
+    public ListTagsForResourceResult listTagsForResource(ListTagsForResourceRequest listTagsForResourceRequest) {
+        return amazonSnsToBeExtended.listTagsForResource(listTagsForResourceRequest);
+    }
+
     public ListTopicsResult listTopics(ListTopicsRequest listTopicsRequest) {
         return amazonSnsToBeExtended.listTopics(listTopicsRequest);
     }
@@ -219,12 +223,20 @@ abstract class AmazonSNSExtendedClientBase implements AmazonSNS {
         return amazonSnsToBeExtended.subscribe(s1, s2, s3);
     }
 
+    public TagResourceResult tagResource(TagResourceRequest tagResourceRequest) {
+        return amazonSnsToBeExtended.tagResource(tagResourceRequest);
+    }
+
     public UnsubscribeResult unsubscribe(UnsubscribeRequest unsubscribeRequest) {
         return amazonSnsToBeExtended.unsubscribe(unsubscribeRequest);
     }
 
     public UnsubscribeResult unsubscribe(String s1) {
         return amazonSnsToBeExtended.unsubscribe(s1);
+    }
+
+    public UntagResourceResult untagResource(UntagResourceRequest untagResourceRequest) {
+        return amazonSnsToBeExtended.untagResource(untagResourceRequest);
     }
 
     public void shutdown() {

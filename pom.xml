@@ -32,7 +32,7 @@
     </developers>
 
     <properties>
-        <aws-java-sdk.version>1.11.300</aws-java-sdk.version>
+        <aws-java-sdk.version>1.11.651</aws-java-sdk.version>
     </properties>
 
     <dependencies>
