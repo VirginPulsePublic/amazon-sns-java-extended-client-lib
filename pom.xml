@@ -42,7 +42,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <aws-java-sdk.version>1.11.651</aws-java-sdk.version>
+        <aws-java-sdk.version>1.12.261</aws-java-sdk.version>
         <nexus-server></nexus-server>
     </properties>
 
